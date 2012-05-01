@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 
 gem 'devise'
+gem 'high_voltage'
 gem 'sqlite3'
-
 
 group :assets do
   gem 'nodeify'
