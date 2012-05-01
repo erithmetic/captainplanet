@@ -8,6 +8,15 @@
 </head>
 <body>
 
+  <nav>
+    <% if current_user %>
+      <%= link_to page_path('map') %>
+    <% else %>
+      <%= link_to new_user_session_path, 'Sign in' %>
+      <%= link_to new_user_registration, 'Register' %>
+    <% end %>
+  </nav>
+
 <%= yield %>
 
 </body>
